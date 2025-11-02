@@ -1,3 +1,5 @@
+# INIZIO TRACCIA ESERCIZIO
+
 Vogliamo creare uno spazio virtuale in stile social network dove gli utenti possano condividere le proprie esperienze. 
 Ogni utente può creare dei post, al quale può aggiungere media come foto e video. 
 Gli altri utenti possono interagire con il post esprimendo il loro gradimento attraverso un semplice "mi piace".
@@ -14,7 +16,9 @@ per garantire l'unicità dei valori e NOT NULL per indicare l’obbligo di forni
 
 Esportate quindi il diagramma come immagine e caricatelo nella repo.
 
-BRAINSTORMING 🧠
+FINE TRACCIA ESERCIZIO #
+
+RIFLESSIONE ENTITà E TIPI DI DATO 🧠
 
 SOCIAL NETWORK --> UTENTI 
 UTENTE --> POSTS (CON MEDIA COME FOTO E VIDEO)
