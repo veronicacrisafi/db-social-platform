@@ -1,10 +1,10 @@
-# table : UTENTE ONE TO MANY CON I POST
+# table : USER ONE TO MANY CON I POST
 
 - id UNIQUE/AUTO INCREMENT BIGINT,
-- cognome NOT NULL VARCHAR(50),
-- nome NOT NULL VARCHAR(50),
+- last_name NOT NULL VARCHAR(50),
+- name NOT NULL VARCHAR(50),
 - email NOT NULL UNIQUE VARCHAR(100),
-- data di nascita NOT NULL DATE,
+- date_of_birth NOT NULL DATE,
 - password NOT NULL VARCHAR(100),
 - username NULL VARCHAR(50)
 
