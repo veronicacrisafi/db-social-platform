@@ -11,24 +11,24 @@
 ## table : POST ONE TO MANY CON I MEDIA
 
 - id UNIQUE/AUTO INCREMENT BIGINT,
-- utente_id FOREIGN KEY NOT NULL BIGINT,
-- data e ora post TIMESTAMP NOT NULL,
-- titolo post VARCHAR(50) NULL,
-- descrizione post TEXT NULL ,
-- contenuto post NOT NULL TEXT
+- user_id FOREIGN KEY NOT NULL BIGINT,
+- date_and_hour_post TIMESTAMP NOT NULL,
+- title VARCHAR(50) NULL,
+- description post TEXT NULL ,
+- content NOT NULL TEXT
 
 ### pivot table : LIKE MANY TO MANY CON I POST E UTENTE
 
 - id UNIQUE/AUTO INCREMENT BIGINT,
-- utente_id FOREIGN KEY NOT NULL BIGINT,
+- user_id FOREIGN KEY NOT NULL BIGINT,
 - post_id FOREIGN KEY NOT NULL BIGINT,
-- UNIQUE(utente_id, post_id)
+- UNIQUE(user_id, post_id)
 
 #### table : MEDIA --> MANY TO ONE COLLEGATA CON GLI ID ALL'UTENTE E ALL'ID DEI POST (tanti media collegati ad un utente e ad un post)
 
 - id UNIQUE AUTO INCREMENT,
-- nome file NOT NULL VARCHAR(50),
-- tipo file NOT NULL VARCHAR(30) ('jpg' 'png' 'mp4'),
+- file_name NOT NULL VARCHAR(50),
+- file_type NOT NULL VARCHAR(30) ('jpg' 'png' 'mp4'),
 - URL VARCHAR (500) NOT NULL,
-- utente_id FOREIGN KEY NOT NULL BIGINT,
+- user_id FOREIGN KEY NOT NULL BIGINT,
 - post_id FOREIGN KEY NOT NULL BIGINT
